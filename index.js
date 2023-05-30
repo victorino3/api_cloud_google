@@ -1,7 +1,7 @@
 import express from "express";
 import { route } from "./route.js";
 import cors from "cors";
-const port = 3000;
+const port = process.env.PORT || 8080;
 const app = express()
 app.use(cors());
 app.use('/',route)
